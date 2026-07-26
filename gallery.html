@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Queen Ella Ezy Buy</title>
+
+<meta name="description"
+content="Browse our product gallery and customer highlights.">
+
+<meta name="keywords"
+content="gallery, products, Queen Ella Ezy Buy">
+
+<meta name="author"
+content="Queen Ella Ezy Buy">
+
+<meta name="robots"
+content="index, follow">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:site_name"
+content="Queen Ella Ezy Buy">
+
+<link rel="icon"
+href="assets/images/Qeelogo.jpg">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="assets/css/style.css">
+
+<style>
+
+.gallery-item{
+
+position:relative;
+
+overflow:hidden;
+
+border-radius:25px;
+
+cursor:pointer;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:
+linear-gradient(
+to top,
+rgba(0,0,0,.85),
+transparent);
+
+display:flex;
+
+align-items:flex-end;
+
+padding:20px;
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+opacity:1;
+
+}
+
+.gallery-overlay h5{
+
+color:white;
+
+margin:0;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center"
+href="index.html">
+
+<img src="assets/images/Qeelogo.jpg"
+class="logo-img"
+alt="Queen Ella Logo">
+
+<span>Queen Ella Ezy Buy</span>
+
+</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#navbarMenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbarMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link"
+href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="products.html">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="services.html">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active"
+href="gallery.html">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero-section">
+
+<div class="container text-center">
+
+<h1 class="display-4 fw-bold"
+data-aos="fade-up">
+
+Gallery
+
+</h1>
+
+<p class="lead"
+data-aos="fade-up"
+data-aos-delay="200">
+
+Our Products & Customer Moments
+
+</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Product Showcase
+
+</h2>
+
+</div>
+
+<div class="row g-4">
+
+<!-- PRODUCT 1 -->
+
+<div class="col-lg-4 col-md-6"
+data-aos="zoom-in">
+
+<div class="gallery-item">
+
+<img src="assets/images/product1.jpg"
+alt="FAITH IN JESUS NAME CRUCIFIX NECKLACE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+
+<div class="gallery-overlay">
+
+<h5>FAITH IN JESUS NAME CRUCIFIX NECKLACE</h5>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCTS 2-10 -->
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product2.jpg" alt="FAITH & PRAYER CRUCIFIX NECKLACE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>FAITH & PRAYER CRUCIFIX NECKLACE</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product3.jpg" alt="CLOVER LEAF NECKLACE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>CLOVER LEAF NECKLACE</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product4.jpg" alt="LV INSPIRED NECKLACE WITH CUBIC ZIRCONIA STONE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>LV INSPIRED NECKLACE WITH CUBIC ZIRCONIA STONE</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product5.jpg" alt="HAPPY HEART NECKLACE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>HAPPY HEART NECKLACE</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product6.jpg" alt="FAITH CRUCIFIX NECKLACE BIG DIAMOND"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>FAITH CRUCIFIX NECKLACE BIG DIAMOND</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product7.jpg" alt="FAITH CRUCIFIX NECKLACE SMALL DIAMOND"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>FAITH CRUCIFIX NECKLACE SMALL DIAMOND</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product8.jpg" alt="MONEY TREE NECKLACE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>MONEY TREE NECKLACE</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product9.jpg" alt="HEART & KEY NECKLACE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay"><h5>HEART & KEY NECKLACE</h5></div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 mx-auto" data-aos="zoom-in">
+<div class="gallery-item">
+<img src="assets/images/product10.jpg" alt="LV INSPIRED NECKLACE"
+onclick="showGallery(this.src)"
+data-bs-toggle="modal"
+data-bs-target="#galleryModal">
+<div class="gallery-overlay">
+<h5>LV INSPIRED NECKLACE</h5>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="counter-section py-5">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-4">
+
+<h2 class="gold-text">10+</h2>
+
+<p>Featured Products</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h2 class="gold-text">1000+</h2>
+
+<p>Happy Customers</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h2 class="gold-text">5★</h2>
+
+<p>Customer Rating</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div class="modal fade"
+id="galleryModal">
+
+<div class="modal-dialog modal-xl">
+
+<div class="modal-content">
+
+<div class="modal-body p-0">
+
+<img id="galleryPreview"
+class="img-fluid w-100">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CTA -->
+
+<section class="promo-section">
+
+<div class="container text-center">
+
+<h2>Interested In Our Products?</h2>
+
+<p>
+Browse our collection and contact us today.
+</p>
+
+<a href="products.html"
+class="btn btn-gold">
+
+View Products
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container text-center">
+
+<h5>Queen Ella Ezy Buy</h5>
+
+<p>
+Quality Products • Trusted Service
+</p>
+
+<p>
+© 2026 Queen Ella Ezy Buy. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+function showGallery(image){
+
+document.getElementById("galleryPreview").src = image;
+
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+<script>
+
+AOS.init({
+duration:1000,
+once:true
+});
+
+</script>
+
+</body>
+</html>
